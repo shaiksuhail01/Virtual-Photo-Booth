@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+   "homepage": "https://shaiksuhail01.github.io/Virtual-Photo-Booth/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
