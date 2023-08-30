@@ -1,0 +1,57 @@
+.sepia {
+    filter: sepia(100%);
+  }
+  
+  .grayscale {
+    filter: grayscale(100%);
+  }
+  
+  .blur {
+    filter: blur(5px);
+  }
+  
+  .brightness {
+    filter: brightness(150%);
+  }
+  
+  .contrast {
+    filter: contrast(150%);
+  }
+  
+  .saturate {
+    filter: saturate(200%);
+  }
+  
+  .invert {
+    filter: invert(100%);
+  }
+  
+  .hue-rotate {
+    filter: hue-rotate(90deg);
+  }
+  
+  .opacity {
+    filter: opacity(70%);
+  }
+  .shadow {
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+  }
+  .imageCaptured2 {
+    transition: filter 0.3s;
+    width:190px;
+    height:170px;
+    margin-top:25px; 
+  }
+.filterText{
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.imageFilter{
+    height: 90px;
+}
+.text{
+font-family: 'Roboto', sans-serif;
+color: #000000;
+text-align: center;
+font-size: 20px;
+}

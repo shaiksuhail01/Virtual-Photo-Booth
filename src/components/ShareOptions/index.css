@@ -1,0 +1,84 @@
+.shareText{
+font-family: 'Roboto', sans-serif;
+color: #000000;
+text-align: center;
+font-size: 18px;
+font-weight: bold;
+width:320px;
+margin: 0px;
+margin-bottom: 5px;
+}
+.shareParaText{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #000000;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.bg{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 22px;
+}
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .shareButton {
+    background-color: #9c27b0; 
+    border: 2px solid #9c27b0;
+    color: #ffffff;
+    font-size: 16px;
+    padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+    margin: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .shareButton:hover {
+    background-color: #7b1fa2; 
+  }
+  .buttons2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+  }
+
+.whatsapp {
+    color: green;
+  }
+  
+  .facebook {
+    color: blue;
+  }
+  
+  .instagram {
+  color: #C13584; 
+  }
+  
+
+  .shareIconWrapper {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 9px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+  
+  .shareIconWrapper:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  

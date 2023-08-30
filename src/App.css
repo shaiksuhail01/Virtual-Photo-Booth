@@ -1,0 +1,269 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.backgroundContainer{
+  background-image: url("/public/flowers-branches-with-camera-table.jpg");
+  background-size: cover;
+  height: 100vh;
+ padding-top: 8px;
+
+}
+
+.image{
+  width:120px;
+  height: auto;
+}
+@media screen and (min-width:576px){
+  .image{
+    display: none;
+  }
+}
+.imageLogoContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin:10px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  margin-top: 0px;
+  filter: drop-shadow(0px 8px 8px rgba(255, 255, 255, 0.8)); 
+}
+.heading {
+  font-family: 'Roboto', sans-serif; 
+  text-align: center;
+color: #272727;
+  font-size: 29px;
+  padding-top: 10px;
+}
+@media screen and (min-width:576px){
+  .heading{
+    padding-left: 30px;
+    font-size: 38px;
+  }
+}
+.para{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 18px;
+ margin: 0px;
+  color: #000000;
+  font-weight: bold;
+}
+@media screen and (min-width:576px){
+  .para{
+    padding-left: 30px;
+    padding-top:10px ;
+    font-size: 20px;
+    width: 658px;
+   
+  }
+}
+
+
+
+:root {
+  --button-background-blue: #1a237e; 
+  --button-color-blue: #ffffff; 
+  --button-hover-background-blue: #0d47a1;
+
+  --button-background-red: #b71c1c; 
+  --button-color-red: #ffffff; 
+  --button-hover-background-red: #7f0000;
+}
+
+.buttonEnter.blue {
+  background-color: var(--button-background-blue);
+  color: var(--button-color-blue);
+}
+
+.buttonEnter.blue:hover {
+  background-color: var(--button-hover-background-blue);
+}
+
+.snapButton.red {
+  background-color: var(--button-background-red);
+  color: var(--button-color-red);
+}
+
+.snapButton.red:hover {
+  background-color: var(--button-hover-background-red);
+}
+
+.buttonEnter {
+  background-color: var(--button-background);
+  color: var(--button-color);
+  border: none;
+  border-radius: 48px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+  outline: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+@media screen and (min-width:576px){
+  .buttonEnter{
+    margin-left: 30px;
+  }
+}.cameraContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  text-align: center;
+ width:300px;
+ height: 400px;
+}
+@media screen and (min-width:576px){
+  .cameraContainer{
+    width: 400px;
+  }
+}
+.captureContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.imageCaptured{
+  width:360px;
+  height:auto;
+}
+
+
+.snapButton{
+  background-color: var(--button-background);
+  color: var(--button-color);
+  border: none;
+  text-align: center;
+  border-radius: 48px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 20px;
+
+  padding-bottom: 20px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+  outline: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.optionsContainer{
+  margin-top: 9px;
+  display: flex;
+  align-items: center;
+}
+.buttonContainer{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin: 28px;
+}
+.optionButtonTry{
+  border: none;
+  border-radius: 48px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+ text-align: center;
+  outline: none;
+  background-color: #b71c1c;
+  color: #ffffff;
+}
+.optionButtonYes{
+  border: none;
+  border-radius: 48px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+ text-align: center;
+  outline: none;
+  background-color: forestgreen;
+  color: #ffffff;
+}
+.optionText{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color:#272727;
+  font-size: 18px;
+ 
+}
+.extra{
+  margin-left: 15px;
+  margin-right: 15px;
+ 
+}
+
+@media screen and (min-width:576px){
+  .extra{
+    margin:auto;
+    width:30%;
+ 
+  }
+}
