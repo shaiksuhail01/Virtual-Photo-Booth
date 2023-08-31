@@ -28,12 +28,9 @@ const FrameSelector = () => {
 
   const [selectedFrame, setSelectedFrame] = useState(null);
 
+
   const handleFrameClick = (frameUrl) => {
     setSelectedFrame(frameUrl);
-  };
-
-  const handleBackClick = () => {
-    window.location.reload(); 
   };
 
 
@@ -71,9 +68,11 @@ const FrameSelector = () => {
     
       <div className='optionsContainer'>
     <div className='buttonContainer'>
-      <button className='optionButtonTry' onClick={handleBackClick}>
+    <Link to="/">
+      <button className='optionButtonTry'>
       <FaBackward size={25}/>
       </button>
+      </Link>
       <p className='optionText'>BACK</p>
       </div>
       <div className='buttonContainer'>

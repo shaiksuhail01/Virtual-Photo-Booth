@@ -16,10 +16,6 @@ const FilterSelector = () => {
   const applyFilter = (filterName) => {
     setSelectedFilter(filterName);
   };
-  const handleBackClick = () => {
-    window.location.reload();
-  };
-
 
 
   return (
@@ -61,9 +57,11 @@ const FilterSelector = () => {
       </div>
       <div className='optionsContainer'>
     <div className='buttonContainer'>
-      <button className='optionButtonTry' onClick={handleBackClick}>
+    <Link to="/">
+      <button className='optionButtonTry'>
       <FaBackward size={25}/>
       </button>
+      </Link>
       <p className='optionText'>BACK</p>
       </div>
       <div className='buttonContainer'>
